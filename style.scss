@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&display=swap");
+
+body {
+  background-color: blanchedalmond;
+  background-image: url("./texture.jpg");
+  background-size: 360px;
+}
+
+body,
+button {
+  font-family: "Fira Code", monospace;
+}
+
+#page-wrap {
+  height: 100%;
+
+  .letter {
+    visibility: hidden;
+  }
+
+  &.passed {
+    .intro {
+      display: none;
+    }
+
+    .letter {
+      visibility: visible;
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .secutiry-control {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  span {
+    color: red;
+  }
+
+  button,
+  input {
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+
+  button {
+    background-color: bisque;
+    border: 0;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+    flex: 2;
+
+    &:active {
+      transform: scale(0.85);
+    }
+  }
+
+  input {
+    border: 1px solid lightgray;
+    font-size: 16px;
+    flex: 8;
+    min-width: 50px;
+  }
+}
+
+.letter {
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 150px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+
+  p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    margin-bottom: 22px;
+  }
+
+  .text-block {
+    line-height: 19.5px;
+    padding: 0 10px;
+    margin-bottom: 13.3px;
+  }
+
+  #finish-words {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: green;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.text-highlight {
+  color: green;
+}
